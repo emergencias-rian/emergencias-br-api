@@ -1,0 +1,109 @@
+//POST / Profissioanis
+{
+  "nome": "Dr. Carlos Almeida",
+  "cidade": "Rio de Janeiro",
+  "uf": "RJ",
+  "profissao": "MEDICO",
+  "n_conselho": "CRM-RJ 987654",
+  "cnh": "98765432109",
+  "validade_cnh": "2026-05-15",
+  "cpf": "987.654.321-00",
+  "rg": "21.987.654-1",
+  "pix": "carlos.almeida@hospital.com",
+  "status": true,
+  "contrato": "PJ",
+  "validade_contrato": "2025-12-31"
+}
+
+// POST /veiculos
+{
+  "identificacao": "Ambulância UTI 01",
+  "renavam": "12345678901",
+  "placa": "ABC1D23",
+  "tipoAmbulancia": "UTI",
+  "status": "ATIVO",
+  "quilometragem": 15000,
+  "ultimaManutencao": "2023-10-15",
+  "proximaManutencao": "2024-04-15"
+}
+
+// PUT /veiculos/1
+{
+  "quilometragem": 17500,
+  "status": "MANUTENCAO",
+  "proximaManutencao": "2024-05-20"
+}
+
+
+// POST /servicos
+{
+  "codigo": "CONS-001",
+  "descricao": "Consulta médica de emergência",
+  "tipo": "CONSULTA",
+  "valorPadrao": 250.00,
+  "duracaoMedia": 30,
+  "requerVeiculo": false
+}
+
+// PUT /servicos/1
+{
+  "valorPadrao": 275.50,
+  "duracaoMedia": 45,
+  "ativo": false
+}
+
+
+// POST /contratos
+{
+  "cliente": {
+    "id": 1
+  },
+  "numeroContrato": "CT-2023-001",
+  "tipo": "PARTICULAR",
+  "dataInicio": "2023-01-01",
+  "dataFim": "2023-12-31",
+  "valorMensal": 5000.00,
+  "observacoes": "Contrato anual com reajuste trimestral"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

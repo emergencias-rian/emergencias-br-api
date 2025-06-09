@@ -1,0 +1,14 @@
+server:
+  servlet:
+    context-path: /api/emergencias-br
+  port: 8080
+
+spring:
+  application:
+    name: emergencias-br-api
+  datasource:
+    url: jdbc:mysql://localhost:3306/emergencias_db
+    username: rasmoo
+    password: senha123
+  flyway:
+    enabled: true

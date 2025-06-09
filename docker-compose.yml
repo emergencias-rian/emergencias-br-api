@@ -1,0 +1,18 @@
+
+services:
+
+  mysql:
+    image: mysql
+    container_name: mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=senha123
+      - MYSQL_PASSWORD=senha123
+      - MYSQL_USER=rasmoo
+    ports:
+      - '3306:3306'
+    volumes:
+      - mysql_data_container:/data/db
+
+volumes:
+  mysql_data_container:
