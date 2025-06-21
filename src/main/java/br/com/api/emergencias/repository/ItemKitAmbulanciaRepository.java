@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface ItemKitAmbulanciaRepository extends JpaRepository<ItemKitAmbulancia, Long> {
     List<ItemKitAmbulancia> findByKitId(Long kitId);
-    List<ItemKitAmbulancia> findByEstoqueId(Long estoqueId);
+    List<ItemKitAmbulancia> findByItemEstoque_Id(Long estoqueId);
     List<ItemKitAmbulancia> findByValidadeBefore(LocalDate date);
     List<ItemKitAmbulancia> findByValidadeBetween(LocalDate start, LocalDate end);
 }

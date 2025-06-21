@@ -8,12 +8,10 @@ import br.com.api.emergencias.service.IItemKitAmbulanciaService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
-import java.util.List;
-
 @Service
 @RequiredArgsConstructor
 public class ItemKitAmbulanciaService implements IItemKitAmbulanciaService {
+
     private final ItemKitAmbulanciaRepository itemKitRepository;
     private final KitAmbulanciaRepository kitRepository;
     private final FarmaciaEstoqueRepository estoqueRepository;
