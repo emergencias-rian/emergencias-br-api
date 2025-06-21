@@ -67,28 +67,102 @@
 }
 
 
+// POST /atendimentos
+{
+  "protocolo": "AT-2023-001",
+  "paciente": { "id": 1 },
+  "dataAtendimento": "2023-05-15T14:30:00",
+  "local": "RESIDENCIA",
+  "endereco": "Rua das Flores, 123 - Centro",
+  "queixaPrincipal": "Dor torácica intensa",
+  "sinaisVitais": {
+    "pressao": "120x80",
+    "temperatura": "36.5",
+    "frequenciaCardiaca": "90"
+  },
+  "procedimento": "Administração de analgésicos e remoção para hospital",
+  "status": "AGENDADO"
+}
+
+// PATCH /atendimentos/1/status?status=EM_ANDAMENTO
+
+
+// POST /faturas
+{
+  "numeroFatura": "FAT-2023-001",
+  "cliente": { "id": 1 },
+  "atendimento": { "id": 1 },
+  "dataServico": "2023-05-15",
+  "dataEmissao": "2023-05-16",
+  "dataVencimento": "2023-06-15",
+  "valorTotal": 1500.00,
+  "observacoes": "Fatura referente ao atendimento de emergência"
+}
+
+
+
+// POST /farmacia/estoque
+{
+  "codigo": "MED-001",
+  "descricao": "Paracetamol 500mg",
+  "lote": "LOT20230501",
+  "tipo": "MEDICAMENTO",
+  "quantidade": 100,
+  "unidade": "CX",
+  "controle": "COMUM",
+  "validade": "2024-05-01",
+  "localArmazenamento": "Prateleira A1",
+  "estoqueMinimo": 20
+}
+
+
+// POST /kits-ambulancia
+{
+  "veiculo": { "id": 1 },
+  "codigo": "KIT-TRAUMA-01",
+  "nome": "Kit de Trauma Completo",
+  "tipo": "TRAUMA",
+  "observacoes": "Inclui colar cervical e talas"
+}
+
+
+
+// POST /kits-ambulancia/itens
+{
+  "kit": { "id": 1 },
+  "itemEstoque": { "id": 5 },
+  "quantidade": 3,
+  "validade": "2024-12-31",
+  "observacoes": "Manter em temperatura ambiente"
+}
+
+
+
+// POST /manutencoes/1/servicos
+{
+  "descricao": "Troca de óleo do motor",
+  "custo": 120.50,
+  "observacoes": "Óleo sintético 5W30"
+}
 
 
 
 
+//agenda
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{
+  "cliente": {
+    "id": 1
+  },
+  "servico": {
+    "id": 2
+  },
+  "data": "2025-06-25",
+  "hora": "14:30:00",
+  "localAtendimento": "Clínica Central - Sala 5",
+  "status": "AGENDADO",
+  "observacoes": "Paciente solicita retorno com exames"
+}
 
 
 
